@@ -1,0 +1,36 @@
+Accept the trainer details from user 
+Trainer name, coursename, start date ,end date ,feedback rating store in one hashmap and generate the feedback id using math.random method. 
+Feedback id should be 3 digit number.
+implement below functionality also : 
+Display the details of trainer where feedback rating is acceted from user .
+
+
+class Trainer {
+	String name;
+	String courseName;
+	LocalDate startDate;
+	LocalDate endDate;
+	int rating ;	
+} 
+
+interface  FeedbackService {
+	public void addFeedback(Trainer trainer);
+	public Hashmap<Integer,Trainer> getTrainerList();
+}
+
+interface  FeedbackDAO {
+	public void addFeedback(Trainer trainer);
+	public Hashmap<Integer,Trainer> getTrainerList();
+}
+
+class DBUtil {
+HashMap<Integer,Trainer> feedbackList=new HashMap<>();
+	
+	static{
+		feedbackList.put(41,new Trainer("Smitha","Java","13-03-2000","10-04-2000",5);
+		feedbackList.put(22,new Trainer("Smitha","Java","01-01-2001","10-01-2000",4);
+		feedbackList.put(43,new Trainer("Smitha","Java","13-10-2001","23-10-2001",3);
+
+}		
+
+
